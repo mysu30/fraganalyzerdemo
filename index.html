@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>Hierarchical Edge Bundling</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+</head>
+
+<body>
+
+<select name="selectVersion" id="selectVersion">
+	<option value="1.1">1.1</option>
+	<option value="2.0">2.0</option>
+	<option value="3.1" selected>3.1</option>
+</select>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime_beauty.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+
+
+
+//import define from "./index.js";
+//import {Runtime, Library, Inspector} from "./runtime_beauty.js";
+
+//const runtime = new Runtime();
+//const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
+
+<body>
+</html>

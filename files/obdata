@@ -1,0 +1,287 @@
+[
+  {
+    "name": "flare.ob-api-account-access-consents",
+    "imports": [
+      "flare.Global.GenerateSecureUUID",
+      "flare.Global.AISP.InitialisePreflow",
+      "flare.GlobalSpikeArrest",
+      "flare.GlobalF5HeaderValidations",
+      "flare.Global.DecryptDecodeJWTForToken1",
+      "flare.Global.XOI-XSubjectHeaderValidation",
+      "flare.GlobalExtractAcctsTokenVariables",
+      "flare.GlobalValidateXsubjectValues",
+      "flare.GlobalTppStatusCheck",
+      "flare.GlobalStatisticsCollectorPushAnalytics",
+      "flare.GlobalResponseHeaders",
+      "flare.GlobalContent-typeHeaderValidation",
+      "flare.GlobalValidateHeadersandQueryParametersForAccounts",
+      "flare.GlobalAcceptHeaderValidation",
+      "flare.GlobalValidateISODateTime",
+      "flare.GlobalMethodNotAllowed",
+      "flare.GlobalFaultNotFound",
+      "flare.GlobalBackendErrorValidation",
+      "flare.GlobalSetResponseContent-typeHeader"
+    ]
+  },
+  {
+    "name": "flare.ob-api-accounts-accountid",
+    "imports": [
+      "flare.Global.GenericFaultRuleHandler",
+      "flare.Global.GenerateSecureUUID",
+      "flare.Global.AISP.InitialisePreflow",
+      "flare.GlobalSpikeArrest",
+      "flare.Global.AISP.RegexProtection.Headers",
+      "flare.GlobalF5HeaderValidations",
+      "flare.GlobalSecurity",
+      "flare.Global.XOI-XSubjectHeaderValidation",
+      "flare.Global.AISP.OAuth.ValidateAccessToken",
+      "flare.GlobalExtractAcctsTokenVariables",
+      "flare.GlobalValidateXsubjectValues",
+      "flare.GlobalTppStatusCheck",
+      "flare.GlobalStatisticsCollectorPushAnalytics",
+      "flare.GlobalResponseHeaders",
+      "flare.GlobalValidateHeadersandQueryParametersForAccounts",
+      "flare.GlobalAcceptHeaderValidation",
+      "flare.GlobalFaultMethodNotAllowedAccounts",
+      "flare.GlobalPopulateLogVariableForAccounts",
+      "flare.GlobalFaultNotFound",
+      "flare.GlobalTargetCustomErrorHandlingAccounts",
+      "flare.GlobalTargetPreflowAccounts_PathContainsAISP",
+      "flare.GlobalSetAccountsResponse",
+      "flare.GlobalSetResponseContent-typeHeader"
+    ]
+  },
+  {
+    "name": "flare.ob-api-accounts-balances",
+    "imports": [
+      "flare.Global.GenericFaultRuleHandler",
+      "flare.Global.GenerateSecureUUID",
+      "flare.Global.AISP.InitialisePreflow",
+      "flare.GlobalSpikeArrest",
+      "flare.Global.AISP.RegexProtection.Headers",
+      "flare.GlobalF5HeaderValidations",
+      "flare.GlobalSecurity",
+      "flare.Global.XOI-XSubjectHeaderValidation",
+      "flare.Global.AISP.OAuth.ValidateAccessToken",
+      "flare.GlobalExtractAcctsTokenVariables",
+      "flare.GlobalValidateXsubjectValues",
+      "flare.GlobalTppStatusCheck",
+      "flare.GlobalStatisticsCollectorPushAnalytics",
+      "flare.GlobalResponseHeaders",
+      "flare.GlobalValidateHeadersandQueryParametersForAccounts",
+      "flare.GlobalAcceptHeaderValidation",
+      "flare.GlobalFaultMethodNotAllowedAccounts",
+      "flare.GlobalPopulateLogVariableForAccounts",
+      "flare.GlobalFaultNotFound",
+      "flare.GlobalTargetCustomErrorHandlingAccounts",
+      "flare.GlobalTargetPreflowAccounts_PathContainsAISP",
+      "flare.GlobalSetAccountsResponse",
+      "flare.GlobalSetResponseContent-typeHeader"
+    ]
+  },
+  {
+    "name": "flare.Global.GenericFaultRuleHandler",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.GlobalValidateHeadersandQueryParametersForAccounts",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.Global.GenerateSecureUUID",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.Global.AISP.InitialisePreflow",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalSpikeArrest",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalF5HeaderValidations",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.Global.DecryptDecodeJWTForToken1",
+    "imports": [
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.Global.XOI-XSubjectHeaderValidation",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalExtractAcctsTokenVariables",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalValidateXsubjectValues",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalTppStatusCheck",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalStatisticsCollectorPushAnalytics",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalResponseHeaders",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalContent-typeHeaderValidation",
+    "imports": [
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalAcceptHeaderValidation",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalValidateISODateTime",
+    "imports": [
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalMethodNotAllowed",
+    "imports": [
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalFaultNotFound",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalBackendErrorValidation",
+    "imports": [
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.GlobalSetResponseContent-typeHeader",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid",
+      "flare.ob-api-account-access-consents"
+    ]
+  },
+  {
+    "name": "flare.Global.AISP.RegexProtection.Headers",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.GlobalSecurity",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.Global.AISP.OAuth.ValidateAccessToken",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.GlobalFaultMethodNotAllowedAccounts",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.GlobalPopulateLogVariableForAccounts",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.GlobalTargetCustomErrorHandlingAccounts",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.GlobalTargetPreflowAccounts_PathContainsAISP",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  },
+  {
+    "name": "flare.GlobalSetAccountsResponse",
+    "imports": [
+      "flare.ob-api-accounts-balances",
+      "flare.ob-api-accounts-accountid"
+    ]
+  }
+]
