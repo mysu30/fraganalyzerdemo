@@ -7,14 +7,14 @@ export default function define(runtime, observer) {
     ]);
 	
 	
-	const selectElement = document.getElementById("selectVersion");
+	/*const selectElement = document.getElementById("selectVersion");
 	var apiVer = selectElement.options[selectElement.selectedIndex].value;
 	const fullAnalysedJSON = fetch(new URL("./files/reportAll",import.meta.url));
 	var selectedJSONReport = fullAnalysedJSON[apiVer];
 	selectElement.addEventListener('change', (event) => {
 		selectedJSONReport = fullAnalysedJSON[event.target.value];
 		hierarchy(selectedJSONReport);        
-	});
+	});*/
 
     main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
     main.variable(observer("chart")).define("chart", ["tree", "bilink", "d3", "data", "width", "id", "colornone", "line", "colorin", "colorout"], function(tree, bilink, d3, data, width, id, colornone, line, colorin, colorout) {
