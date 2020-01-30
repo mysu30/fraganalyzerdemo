@@ -2,7 +2,7 @@
 export default function define(runtime, observer) {
     const main = runtime.module();
     const fileAttachments = new Map([
-        ["flare.json", new URL("./files/report3",
+        ["flare.json", new URL("./files/report1",
             import.meta.url)]
     ]);
 	
